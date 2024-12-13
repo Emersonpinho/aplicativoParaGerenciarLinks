@@ -4,7 +4,6 @@ export default function Index(){
     return (
         <view>
             <Text>Hello react native</Text>
-            <Text>Meu app</Text>
         </view>  
     )
 }
