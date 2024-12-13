@@ -1,7 +1,10 @@
-import { Text } from "react-native"
+import { Text, View } from "react-native"
 
 export default function Index(){
     return (
-        <Text>Hello react native</Text>
+        <view>
+            <Text>Hello react native</Text>
+            <Text>Meu app</Text>
+        </view>  
     )
 }
