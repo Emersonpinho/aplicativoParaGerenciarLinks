@@ -3,7 +3,7 @@ import { Text, View } from "react-native"
 export default function Index(){
     return (
         <view>
-            <Text>Hello react native</Text>
+            <Text style={{ color: "red", fontSize: 22 }}>Hello react native!</Text>
         </view>  
     )
 }
