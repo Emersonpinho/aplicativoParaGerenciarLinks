@@ -1,6 +1,6 @@
 import { Text, View, StyleSheet } from "react-native"
 
-import { colors } from "../app/styles/colors"
+import { style } from "./style";
 
 export default function Index(){
     return (
@@ -11,14 +11,3 @@ export default function Index(){
     )
 }
 
-const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    title: {
-        color: colors.green[900],
-        fontSize: 22,
-    }
-})
