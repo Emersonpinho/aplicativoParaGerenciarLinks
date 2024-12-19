@@ -6,11 +6,15 @@ import { Header } from "react-native/Libraries/NewAppScreen";
 export const style = StyleSheet.create({
     container: {
         flex: 1,
+        paddingTop: 62,
     },
     title: {
         color: colors.green[900],
         fontSize: 22,
     },
     header: {},
-    logo: {}
+    logo: {
+        height: 32,
+        width: 38
+    },
 })
