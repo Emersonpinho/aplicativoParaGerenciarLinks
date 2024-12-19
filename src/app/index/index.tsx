@@ -11,8 +11,9 @@ export default function Index(){
             <View style={style.header}>
                 <Image source={require("@/assets/logo.png")} style={style.logo} />
 
-
-                <MaterialIcons name="add" size={32} color={colors.green[300]} />
+                <TouchableOpacity>
+                    <MaterialIcons name="add" size={32} color={colors.green[300]} />
+                </TouchableOpacity>
             </View>
         </View>  
     )
