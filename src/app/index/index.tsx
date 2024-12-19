@@ -1,12 +1,13 @@
-import { Text, View } from "react-native";
+import { View,Image } from "react-native";
 
 import { style } from "./style";
 
 export default function Index(){
     return (
         <View style={style.container}>
-            <Text style={style.title}>Hello</Text>
-            <Text style={style.title}>react native!</Text>
+            <View style={style.header}>
+
+            </View>
         </View>  
     )
 }
