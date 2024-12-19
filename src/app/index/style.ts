@@ -12,7 +12,9 @@ export const style = StyleSheet.create({
         color: colors.green[900],
         fontSize: 22,
     },
-    header: {},
+    header: {
+        paddingHorizontal: 24,
+    },
     logo: {
         height: 32,
         width: 38
