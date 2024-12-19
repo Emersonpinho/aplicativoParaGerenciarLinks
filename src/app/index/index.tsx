@@ -6,7 +6,7 @@ export default function Index(){
     return (
         <View style={style.container}>
             <View style={style.header}>
-                <Image source={require("@/assets/logo.png")} />
+                <Image source={require("@/assets/logo.png")} style={style.logo} />
             </View>
         </View>  
     )
