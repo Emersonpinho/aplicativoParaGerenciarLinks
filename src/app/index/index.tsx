@@ -1,9 +1,10 @@
 import { View, Image, TouchableOpacity } from "react-native";
-
 import { MaterialIcons } from "@expo/vector-icons";
 
 import { style } from "./style";
 import { colors } from "@/app/styles/colors";
+
+import { Category } from "@/components/category";
 
 export default function Index(){
     return (
@@ -15,6 +16,8 @@ export default function Index(){
                     <MaterialIcons name="add" size={32} color={colors.green[300]} />
                 </TouchableOpacity>
             </View>
+
+            <Category />
         </View>  
     )
 }
