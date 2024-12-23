@@ -18,6 +18,8 @@ export default function Index(){
             </View>
 
             <Category />
+            <Category />
+            <Category />
         </View>  
     )
 }
