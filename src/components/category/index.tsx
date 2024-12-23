@@ -7,11 +7,12 @@ import { styles } from "./style";
 type props = {
   name: string;
   icon: keyof typeof MaterialIcons.glyphMap
+  onPress?: () => void;
 }
 
-export function Category({name, icon}: props) {
+export function Category({name, icon, onPress}: props) {
   return (
-    <Pressable style={styles.container}>
+    <Pressable style={styles.container} onPress={onPress}>
       <MaterialIcons name={icon} size={16} color={colors.gray[400]} />
       <Text style={styles.name}>{name}</Text>
     </Pressable>
