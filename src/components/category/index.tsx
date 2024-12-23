@@ -9,11 +9,11 @@ type props = {
   icon: keyof typeof MaterialIcons.glyphMap
 }
 
-export function Category(props: props) {
+export function Category({name, icon}: props) {
   return (
     <Pressable style={styles.container}>
-      <MaterialIcons name={props.icon} size={16} color={colors.gray[400]} />
-      <Text style={styles.name}>{props.name}</Text>
+      <MaterialIcons name={icon} size={16} color={colors.gray[400]} />
+      <Text style={styles.name}>{name}</Text>
     </Pressable>
   );
 }
