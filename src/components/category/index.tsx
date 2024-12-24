@@ -5,11 +5,12 @@ import { colors } from "@/app/styles/colors";
 import { styles } from "./style";
 
 type props = PressableProps & {
-  name: string;
+  name: string
+  isSelect: boolean
   icon: keyof typeof MaterialIcons.glyphMap
 }
 
-export function Category({name, icon, ...rest}: props) {
+export function Category({name, icon, isSelect,...rest}: props) {
   return (
     <Pressable style={styles.container} {...rest}>
       <MaterialIcons name={icon} size={16} color={colors.gray[400]} />
