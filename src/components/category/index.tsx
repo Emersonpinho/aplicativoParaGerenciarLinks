@@ -11,10 +11,14 @@ type props = PressableProps & {
 }
 
 export function Category({name, icon, isSelect,...rest}: props) {
+  const color = isSelect ? colors.green[300] : colors.gray[400]
+
   return (
     <Pressable style={styles.container} {...rest}>
-      <MaterialIcons name={icon} size={16} color={colors.gray[400]} />
-      <Text style={styles.name}>{name}</Text>
+
+      <MaterialIcons name={icon} size={16} color={color} />
+      <Text style={[styles.name, { color }]}>{name}</Text>
+      
     </Pressable>
   );
 }
