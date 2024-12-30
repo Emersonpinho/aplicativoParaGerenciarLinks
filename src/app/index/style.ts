@@ -61,5 +61,7 @@ export const style = StyleSheet.create({
         fontWeight: "600",
         color: colors.gray[200]
     },
-    modalUrl: {},    
+    modalUrl: {
+        fontSize: 14,
+    },    
 })
