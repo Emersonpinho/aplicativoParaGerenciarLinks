@@ -41,7 +41,7 @@ export const style = StyleSheet.create({
         backgroundColor: colors.gray[900],
         borderTopWidth: 1,
         borderTopColor: colors.gray[800],
-        paddingBottom: 32,
+        paddingBottom: 45,
         padding: 24,
     },
     modalHeader: {
