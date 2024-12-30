@@ -40,7 +40,9 @@ export default function Index(){
                 <View style={style.modalContent}>
                     <View style={style.modalHeader}>
                         <Text style={style.modalCategory}>Curso</Text>
-                        <MaterialIcons name="close" size={20} color={colors.gray[400]} />
+                        <TouchableOpacity>
+                            <MaterialIcons name="close" size={20} color={colors.gray[400]} />
+                        </TouchableOpacity>
                     </View>
 
                     <Text style={style.modalLinkName}>Rocketseat
