@@ -1,4 +1,4 @@
-import { StyleSheet} from "react-native"
+import { Modal, StyleSheet} from "react-native"
 
 import { colors } from "@/app/styles/colors";
 import { Header } from "react-native/Libraries/NewAppScreen";
@@ -33,4 +33,10 @@ export const style = StyleSheet.create({
         padding: 24,
         paddingBottom: 100,
     },
+    modal: {},
+    modalContent: {},
+    modalHeader: {},
+    modalCategory: {},
+    modalLinkName: {},
+    modalUrl: {},    
 })
