@@ -31,7 +31,7 @@ export default function Index(){
                 />
             )}
             style={style.links}
-            contentContainerStyle={styles.linksContent}
+            contentContainerStyle={style.linksContent}
             showsVerticalScrollIndicator={false}
          />
         </View>  
