@@ -1,14 +1,17 @@
-import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native"
+import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
 
-import { styles } from "./styles"
-import { colors } from "@/app/styles/colors"
-import { MaterialIcons } from "@expo/vector-icons"
+import { styles } from "./styles";
+import { colors } from "@/app/styles/colors";
+import { View } from "react-native-reanimated/lib/typescript/Animated";
+
 
 type props = TouchableOpacityProps & {
     name: string
     icon: keyof typeof MaterialIcons.glyphMap
     variant?: "primary" | "secondary"
 }
+
 
 export function Option({ name, icon, variant = "primary", ...rest }: props) {
     return (
