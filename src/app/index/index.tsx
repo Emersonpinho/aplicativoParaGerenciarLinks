@@ -5,6 +5,7 @@ import { style } from "./style";
 import { colors } from "@/app/styles/colors";
 
 import { Link } from "@/components/link";
+import { Option } from "@/components/option";
 import { Categories } from "@/components/categories";
 import { styles } from "@/components/categories/style";
 
@@ -50,6 +51,10 @@ export default function Index(){
 
                     <Text style={style.modalUrl}>https://www.rocketseat.com.br/
                     </Text>
+                    <View style={style.modalFooter}>
+                        <Option name="Excluir" icon="delete" variant="secondary" />
+                        <Option name="Abrir" icon="language" />
+                    </View>
                 </View>
             </View>
          </Modal>
