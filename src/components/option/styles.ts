@@ -16,4 +16,5 @@ export const styles = StyleSheet.create({
         color: colors.green[300],
         fontSize: 16,
     },
+    
 })
