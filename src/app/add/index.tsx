@@ -6,6 +6,8 @@ import { styles } from "./styles"
 import { colors } from "@/app/styles/colors"
 import { style } from "../index/style"
 
+import { Categories } from "@/components/categories";
+
 export default function add(){
     return (
         <View style={styles.container}>
@@ -18,6 +20,7 @@ export default function add(){
             </View>
 
             <Text style={styles.label}>Selecione uma categoria</Text>
+            <Categories />
         </View>
     )
 }
