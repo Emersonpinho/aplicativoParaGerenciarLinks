@@ -21,5 +21,6 @@ export const styles = StyleSheet.create({
     label: {
         color: colors.gray[400],
         fontSize: 14,
+        paddingHorizontal: 24,
     },
 })
