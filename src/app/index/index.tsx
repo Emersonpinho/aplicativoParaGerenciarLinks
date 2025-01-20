@@ -1,13 +1,13 @@
-import { View, Image, TouchableOpacity, FlatList, Modal, Text } from "react-native";
-import { MaterialIcons } from "@expo/vector-icons";
+import { View, Image, TouchableOpacity, FlatList, Modal, Text } from "react-native"
+import { MaterialIcons } from "@expo/vector-icons"
 
-import { style } from "./style";
-import { colors } from "@/app/styles/colors";
+import { style } from "./style"
+import { colors } from "@/app/styles/colors"
 
-import { Link } from "@/components/link";
-import { Option } from "@/components/option";
-import { Categories } from "@/components/categories";
-import { styles } from "@/components/categories/style";
+import { Link } from "@/components/link"
+import { Option } from "@/components/option"
+import { Categories } from "@/components/categories"
+import { styles } from "@/components/categories/style"
 
 export default function Index(){
     return (
