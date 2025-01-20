@@ -9,7 +9,11 @@ export default function add(){
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                
+                <TouchableOpacity>
+                    <MaterialIcons name="arrow-back" size={32} color={colors.gray[200]} />
+                </TouchableOpacity>
+
+
             </View>
         </View>
     )
