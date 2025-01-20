@@ -7,6 +7,7 @@ Modal,
 Text 
 } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
+import { router } from "expo-router"
 
 import { style } from "./style"
 import { colors } from "@/app/styles/colors"
