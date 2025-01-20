@@ -15,6 +15,10 @@ export default function add(){
 
                 <Text style={styles.title}>Novo</Text>
             </View>
+
+            <Text style={styles.label}>
+                Selecione uma categoria
+            </Text>
         </View>
     )
 }
