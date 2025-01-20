@@ -1,4 +1,11 @@
-import { View, Image, TouchableOpacity, FlatList, Modal, Text } from "react-native"
+import { 
+View, 
+Image, 
+TouchableOpacity, 
+FlatList, 
+Modal, 
+Text 
+} from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
 
 import { style } from "./style"
