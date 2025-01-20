@@ -13,7 +13,7 @@ export default function add(){
                     <MaterialIcons name="arrow-back" size={32} color={colors.gray[200]} />
                 </TouchableOpacity>
 
-
+                <Text style={styles.title}>Novo</Text>
             </View>
         </View>
     )
