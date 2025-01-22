@@ -23,7 +23,7 @@ export default function add(){
             <Text style={styles.label}>Selecione uma categoria</Text>
             <Categories />
 
-            <input  />
+            <input  placeholder="Nome"/>
         </View>
     )
 }
