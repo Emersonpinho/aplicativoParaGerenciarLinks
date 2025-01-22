@@ -1,0 +1,1 @@
+import { TextInput, TextInputProps } from "react-native"
