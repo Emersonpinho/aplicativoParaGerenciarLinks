@@ -27,6 +27,7 @@ export default function add(){
             <View style={styles.form}>
                 <Input  placeholder="Nome"/>
                 <Input  placeholder="Url"/>
+                <Button title="Adicionar"/>
             </View>
         </View>
     )
