@@ -14,9 +14,9 @@ import { Button } from "@/components/button"
 export default function Add(){
     const [name, setName] = useState()
 
-    
+
     function textChange(value: string){
-        name = value 
+        setName(value) 
     }
 
     return (
