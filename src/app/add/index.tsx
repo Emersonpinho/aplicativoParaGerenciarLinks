@@ -14,11 +14,7 @@ import { Button } from "@/components/button"
 export default function Add(){
     const [name, setName] = useState("")
 
-
-    function textChange(value: string){
-        setName(value) 
-    }
-
+    
     return (
         <View style={styles.container}>
             <View style={styles.header}>
