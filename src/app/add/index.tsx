@@ -13,6 +13,12 @@ import { Button } from "@/components/button"
 
 export default function Add(){
     const [name, setName] = useState("")
+    const [url, setUrl] = useState("")
+
+
+    function handleAdd(){
+        
+    }
 
 
     return (
