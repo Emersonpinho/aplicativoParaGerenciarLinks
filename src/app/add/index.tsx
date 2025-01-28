@@ -12,7 +12,7 @@ import { Input } from "@/components/input"
 import { Button } from "@/components/button"
 
 export default function Add(){
-    const [name, setName] = useState()
+    const [name, setName] = useState("")
 
 
     function textChange(value: string){
