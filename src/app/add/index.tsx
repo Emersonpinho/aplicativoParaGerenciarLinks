@@ -36,7 +36,7 @@ export default function add(){
                 <Button title="Adicionar"/>
             </View>
 
-            <Text style={styles.title}>Novo</Text>
+            <Text style={styles.title}>{name}</Text>
         </View>
     )
 }
