@@ -14,7 +14,7 @@ import { Button } from "@/components/button"
 export default function Add(){
     const [name, setName] = useState("")
 
-    
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -33,8 +33,6 @@ export default function Add(){
                 <Input  placeholder="Url"/>
                 <Button title="Adicionar"/>
             </View>
-
-            <Text style={styles.title}>{name}</Text>
         </View>
     )
 }
