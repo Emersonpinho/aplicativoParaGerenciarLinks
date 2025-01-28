@@ -17,7 +17,7 @@ export default function Add(){
 
 
     function handleAdd(){
-        
+        console.log(name, url)
     }
 
 
