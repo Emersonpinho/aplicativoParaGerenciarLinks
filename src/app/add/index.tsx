@@ -11,9 +11,10 @@ import { Categories } from "@/components/categories"
 import { Input } from "@/components/input"
 import { Button } from "@/components/button"
 
-export default function add(){
-    let name = "Emerson"
+export default function Add(){
+    const [name, setName] = useState()
 
+    
     function textChange(value: string){
         name = value 
     }
