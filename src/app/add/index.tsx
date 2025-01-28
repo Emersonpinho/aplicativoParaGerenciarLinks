@@ -11,7 +11,7 @@ import { Input } from "@/components/input"
 import { Button } from "@/components/button"
 
 export default function add(){
-    let name = ""
+    let name = "Emerson"
 
     function textChange(value: string){
         name = value 
