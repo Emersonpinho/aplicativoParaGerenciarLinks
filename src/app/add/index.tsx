@@ -33,7 +33,7 @@ export default function Add(){
             <Categories />
 
             <View style={styles.form}>
-                <Input  placeholder="Nome" onChangeText={textChange}/>
+                <Input  placeholder="Nome" onChangeText={setName}/>
                 <Input  placeholder="Url"/>
                 <Button title="Adicionar"/>
             </View>
