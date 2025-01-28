@@ -35,7 +35,7 @@ export default function Add(){
             <Categories />
 
             <View style={styles.form}>
-                <Input  placeholder="Nome" onChangeText={setName}/>
+                <Input  placeholder="Nome" onChangeText={setName} autoCorrect={false} />
                 <Input  placeholder="Url"/>
                 <Button title="Adicionar" onPress={handleAdd}/>
             </View>
