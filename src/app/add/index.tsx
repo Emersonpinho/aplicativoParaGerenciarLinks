@@ -14,7 +14,7 @@ export default function add(){
     let name = ""
 
     function textChange(value: string){
-        console.log(value)
+        name = value 
     }
 
     return (
