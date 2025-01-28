@@ -11,6 +11,12 @@ import { Input } from "@/components/input"
 import { Button } from "@/components/button"
 
 export default function add(){
+    let name = ""
+
+    function textChange(value: string){
+        console.log(value)
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -25,10 +31,12 @@ export default function add(){
             <Categories />
 
             <View style={styles.form}>
-                <Input  placeholder="Nome" onChangeText={console.log}/>
+                <Input  placeholder="Nome" onChangeText={textChange}/>
                 <Input  placeholder="Url"/>
                 <Button title="Adicionar"/>
             </View>
+
+            <Text style={styles.title}>Novo</Text>
         </View>
     )
 }
