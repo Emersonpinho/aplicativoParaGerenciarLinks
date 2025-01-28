@@ -36,7 +36,7 @@ export default function Add(){
 
             <View style={styles.form}>
                 <Input  placeholder="Nome" onChangeText={setName} autoCorrect={false} />
-                <Input  placeholder="Url"/>
+                <Input  placeholder="Url" onChangeText={setUrl} />
                 <Button title="Adicionar" onPress={handleAdd}/>
             </View>
         </View>
