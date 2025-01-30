@@ -12,15 +12,18 @@ type Props = {
 export function Categories({selected, onchange }: Props){
     return (
     <FlatList 
-    data={categories}
-    keyExtractor={(item) => item.id}
-    renderItem={({ item }) => (
-    <Category name={item.name} icon={item.icon} isSelect={false} /> 
+      data={categories}
+      keyExtractor={(item) => item.id}
+      renderItem={({ item }) => (
+      <Category 
+        name={item.name} 
+        icon={item.icon} 
+        isSelect={false} /> 
     )}
-    horizontal
-    style={styles.container}
-    contentContainerStyle={styles.content}
-    showsHorizontalScrollIndicator={false}
+      horizontal
+      style={styles.container}
+      contentContainerStyle={styles.content}
+      showsHorizontalScrollIndicator={false}
   />
 )  
 }
