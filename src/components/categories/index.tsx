@@ -4,6 +4,11 @@ import { styles } from "./style";
 import { categories } from "@/utils/categories";
 import { Category } from "@/components/category";
 
+type Props = {
+  selected: string
+  onchange: (category: string) => void
+}
+
 export function Categories() {
     return (
     <FlatList 
