@@ -18,7 +18,8 @@ export function Categories({selected, onchange }: Props){
       <Category 
         name={item.name} 
         icon={item.icon} 
-        isSelect={false} /> 
+        isSelect={} 
+      /> 
     )}
       horizontal
       style={styles.container}
