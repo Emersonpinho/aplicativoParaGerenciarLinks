@@ -18,7 +18,8 @@ export function Categories({selected, onchange }: Props){
       <Category 
         name={item.name} 
         icon={item.icon} 
-        isSelect={item.name === selected} 
+        isSelect={item.name === selected}
+        onPress={() => onchange(item.name)}
       /> 
     )}
       horizontal
