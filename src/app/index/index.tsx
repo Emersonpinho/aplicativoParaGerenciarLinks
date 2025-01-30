@@ -1,16 +1,18 @@
+import { useState } from "react"
 import { 
-View, 
-Image, 
-TouchableOpacity, 
-FlatList, 
-Modal, 
-Text 
+    View, 
+    Text, 
+    Image, 
+    Modal, 
+    FlatList, 
+    TouchableOpacity, 
 } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
 import { router } from "expo-router"
 
 import { style } from "./style"
 import { colors } from "@/app/styles/colors"
+import { categories } from "@/utils/categories"
 
 import { Link } from "@/components/link"
 import { Option } from "@/components/option"
@@ -18,6 +20,7 @@ import { Categories } from "@/components/categories"
 import { styles } from "@/components/categories/style"
 
 export default function Index(){
+    const [category, setCategory] = useState(categories[0].name)
     return (
         <View style={style.container}>
             <View style={style.header}>
