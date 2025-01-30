@@ -11,7 +11,9 @@ import { Categories } from "@/components/categories"
 import { Input } from "@/components/input"
 import { Button } from "@/components/button"
 
-export default function Add(){
+export default function Add() {
+
+    const [category, setcategory] = useState("")
     const [name, setName] = useState("")
     const [url, setUrl] = useState("")
 
