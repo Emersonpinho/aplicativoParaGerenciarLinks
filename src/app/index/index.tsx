@@ -31,7 +31,7 @@ export default function Index(){
                 </TouchableOpacity>
             </View>
 
-            <Categories />
+            <Categories onchange={setCategory} selected={category}/>
 
 
             <FlatList
