@@ -9,7 +9,7 @@ type Props = {
   onchange: (category: string) => void
 }
 
-export function Categories() {
+export function Categories({selected, onchange }: Props){
     return (
     <FlatList 
     data={categories}
