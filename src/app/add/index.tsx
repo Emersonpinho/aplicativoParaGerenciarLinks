@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { View, Text, TouchableOpacity } from "react-native"
+import { View, Text, TouchableOpacity, Alert } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
 import { router } from "expo-router"
 
@@ -16,9 +16,12 @@ export default function Add() {
     const [category, setcategory] = useState("")
     const [name, setName] = useState("")
     const [url, setUrl] = useState("")
-
-
+    
     function handleAdd(){
+        if(!category){
+
+        }
+
         console.log(category, name, url)
     }
 
