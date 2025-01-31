@@ -26,7 +26,7 @@ export default function Add() {
             return Alert.alert("Nome", "informe um Nome!!")
         }
 
-        if(!url){
+        if(!url.trim()){
             return Alert.alert("URL", "Informe uma URL!!")
         }
 
