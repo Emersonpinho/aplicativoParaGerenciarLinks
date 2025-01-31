@@ -22,7 +22,7 @@ export default function Add() {
             return Alert.alert("Categoria", "Selecione uma categoria!!")
         }
 
-        if(!name){
+        if(!name.trim()){
             return Alert.alert("Nome", "informe um Nome!!")
         }
 
