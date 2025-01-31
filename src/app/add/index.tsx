@@ -19,7 +19,15 @@ export default function Add() {
     
     function handleAdd(){
         if(!category){
-            return Alert.alert("Categoria", "Selecione uma categoria")
+            return Alert.alert("Categoria", "Selecione uma categoria!!")
+        }
+
+        if(!name){
+            return Alert.alert("Nome", "informe um Nome!!")
+        }
+
+        if(!url){
+            return Alert.alert("URL", "Informe uma URL!!")
         }
 
         console.log(category, name, url)
