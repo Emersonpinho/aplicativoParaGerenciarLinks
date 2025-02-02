@@ -10,3 +10,15 @@ type LinkStorage = {
     category: string
 }
 
+async function get() {
+    
+}
+
+async function save(newLink: LinkStorage) {
+    try {
+
+    } catch (error) {
+        throw error
+    }
+    
+}
