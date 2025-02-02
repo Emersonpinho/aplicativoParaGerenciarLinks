@@ -12,6 +12,9 @@ type LinkStorage = {
 
 async function get() {
     const storage =  await AsyncStorage.getItem(LINKS_STORAGE_KEY)
+    const response =  storage ? JSON.parse(storage) : []
+
+    return response
 }
 
 async function save(newLink: LinkStorage) {
