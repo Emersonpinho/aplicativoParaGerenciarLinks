@@ -10,7 +10,7 @@ type LinkStorage = {
     category: string
 }
 
-async function get() {
+async function get(): Promise<LinkStorage[]> {
     const storage =  await AsyncStorage.getItem(LINKS_STORAGE_KEY)
     const response =  storage ? JSON.parse(storage) : []
 
