@@ -20,9 +20,9 @@ async function get(): Promise<LinkStorage[]> {
 async function save(newLink: LinkStorage) {
     try {
         const storage = await get()
+        const update = JSON.stringify([...storage, newLink])
 
-        await AsyncStorage.setItem(LINKS_STORAGE_KEY, JSON.stringify([...storage, newLink]))
-
+        await AsyncStorage.setItem(LINKS_STORAGE_KEY, update)
     } catch (error) {
         throw error
     }
