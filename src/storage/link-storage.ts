@@ -28,3 +28,6 @@ async function save(newLink: LinkStorage) {
     }
     
 }
+
+export const LinkStorage = { get, save }
+
