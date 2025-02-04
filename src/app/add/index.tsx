@@ -33,6 +33,7 @@ export default function Add() {
         }
 
         await LinkStorage.save({
+            id: new Date().getTime().toString(),
             name,
             url,
             category,
