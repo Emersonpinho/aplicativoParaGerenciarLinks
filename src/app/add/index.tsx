@@ -32,7 +32,10 @@ export default function Add() {
             return Alert.alert("URL", "Informe uma URL!!")
         }
 
-        console.log(category, name, url)
+        const data = await LinkStorage.get()
+        console.log(data)
+
+        // console.log(category, name, url)
     } catch (error){
         Alert.alert("Erro", "Não foi possível salvar o link!!")
         console.log(error)
