@@ -62,7 +62,12 @@ export default function Add() {
             <Categories onchange={setcategory} selected={category} />
 
             <View style={styles.form}>
-                <Input  placeholder="Nome" onChangeText={setName} autoCorrect={false} />
+                <Input  
+                placeholder="Nome"
+                onChangeText={setName} 
+                autoCorrect={false}
+                autoCapitalize="none"
+                />
                 <Input  placeholder="URL" onChangeText={setUrl} autoCorrect={false}/>
                 <Button title="Adicionar" onPress={handleAdd}/>
             </View>
