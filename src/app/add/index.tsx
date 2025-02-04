@@ -18,7 +18,8 @@ export default function Add() {
     const [name, setName] = useState("")
     const [url, setUrl] = useState("")
     
-    function handleAdd(){
+    async function handleAdd(){
+        try{
         if(!category){
             return Alert.alert("Categoria", "Selecione uma categoria!!")
         }
@@ -32,6 +33,10 @@ export default function Add() {
         }
 
         console.log(category, name, url)
+    } catch (error){
+        Alert.alert("Erro", "Não foi possível salvar o link!!")
+        console.log(error)
+    }
     }
 
 
