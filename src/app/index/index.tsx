@@ -23,13 +23,13 @@ import { styles } from "@/components/categories/style"
 import { Try } from "expo-router/build/views/Try"
 
 export default function Index(){
-    const [links, setlinks] = useState([])
+    const [links, setlinks] = useState<LinkStorage[]>([])
     const [category, setCategory] = useState(categories[0].name)
 
     async function getLinks() {
         try {
             const response = await linkStorage.get()
-            console.log(response)
+            setlinks(response)
         } catch (error){
             Alert.alert("Erro", "Não foi possível listar os links")
         }
@@ -53,11 +53,13 @@ export default function Index(){
 
 
             <FlatList
-                data={["1", "2", "3", "4", "5"]}
-                keyExtractor={item => item}
-                renderItem={() => (
+                data={links}
+                keyExtractor={item => item.id}
+                renderItem={({ item }) => (
                 <Link
-                    name="Rocketseat" url="https://www.rocketseat.com.br/" onDetails={() => console.log("clicou!")} 
+                    name={item.name} 
+                    url={item.url} 
+                    onDetails={() => console.log("clicou!")} 
                 />
             )}
             style={style.links}
