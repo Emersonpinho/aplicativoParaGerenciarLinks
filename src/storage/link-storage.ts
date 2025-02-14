@@ -1,6 +1,6 @@
 import  AsyncStorage  from "@react-native-async-storage/async-storage"
 
-const LINKS_STORAGE_KEY = 'Links-storage'
+const LINKS_STORAGE_KEY = 'links-storage'
 
 
 export type LinkStorage = {
@@ -29,5 +29,5 @@ async function save(newLink: LinkStorage) {
     
 }
 
-export const LinkStorage = { get, save }
+export const linkStorage = { get, save }
 

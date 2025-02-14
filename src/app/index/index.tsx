@@ -14,7 +14,7 @@ import { router } from "expo-router"
 import { style } from "./style"
 import { colors } from "@/app/styles/colors"
 import { categories } from "@/utils/categories"
-import { LinkStorage } from "@/storage/link-storage"
+import { LinkStorage, linkStorage } from "@/storage/link-storage"
 
 import { Link } from "@/components/link"
 import { Option } from "@/components/option"
@@ -28,7 +28,7 @@ export default function Index(){
 
     async function getLinks() {
         try {
-            const response = await LinkStorage.get()
+            const response = await linkStorage.get()
             console.log(response)
         } catch (error){
             Alert.alert("Erro", "Não foi possível listar os links")
