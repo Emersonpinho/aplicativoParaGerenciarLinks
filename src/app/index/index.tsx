@@ -23,6 +23,7 @@ import { styles } from "@/components/categories/style"
 import { Try } from "expo-router/build/views/Try"
 
 export default function Index(){
+    const [links, setlinks] = useState([])
     const [category, setCategory] = useState(categories[0].name)
 
     async function getLinks() {
