@@ -36,7 +36,7 @@ export default function Index(){
 
     useEffect(() => {
         getLinks()
-    }, [])
+    }, [category])
 
     return (
         <View style={style.container}>
