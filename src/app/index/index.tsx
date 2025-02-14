@@ -4,8 +4,9 @@ import {
     Text, 
     Image, 
     Modal, 
+    Alert,
     FlatList, 
-    TouchableOpacity, 
+    TouchableOpacity,
 } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
 import { router } from "expo-router"
@@ -19,9 +20,20 @@ import { Link } from "@/components/link"
 import { Option } from "@/components/option"
 import { Categories } from "@/components/categories"
 import { styles } from "@/components/categories/style"
+import { Try } from "expo-router/build/views/Try"
 
 export default function Index(){
     const [category, setCategory] = useState(categories[0].name)
+
+    async function getLinks() {
+        try {
+            const response = await LinkStorage.get()
+            console.log(response)
+        } catch (error){
+            Alert.alert("Erro", "Não foi possível listar os links")
+        }
+    }
+
     return (
         <View style={style.container}>
             <View style={style.header}>
