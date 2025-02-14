@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useCallback } from "react"
 import { 
     View, 
     Text, 
@@ -9,7 +9,7 @@ import {
     TouchableOpacity,
 } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
-import { router } from "expo-router"
+import { router, useFocusEffect } from "expo-router"
 
 import { style } from "./style"
 import { colors } from "@/app/styles/colors"
@@ -35,9 +35,9 @@ export default function Index(){
         }
     }
 
-    useEffect(() => {
+    useFocusEffect(useCallback(() => {
         getLinks()
-    }, [category])
+    }, []))
 
     return (
         <View style={style.container}>
