@@ -13,6 +13,7 @@ import { router } from "expo-router"
 import { style } from "./style"
 import { colors } from "@/app/styles/colors"
 import { categories } from "@/utils/categories"
+import { LinkStorage } from "@/storage/link-storage"
 
 import { Link } from "@/components/link"
 import { Option } from "@/components/option"
