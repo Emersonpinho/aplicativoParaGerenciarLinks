@@ -33,7 +33,7 @@ export default function Index(){
             const filtered = response.filter((link) => link.category === category)
             
 
-            setlinks(response)
+            setlinks(filtered)
         } catch (error){
             Alert.alert("Erro", "Não foi possível listar os links")
         }
