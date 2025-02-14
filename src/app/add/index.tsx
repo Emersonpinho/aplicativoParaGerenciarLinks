@@ -38,6 +38,7 @@ export default function Add() {
             url,
             category,
         })
+        
     } catch (error){
         Alert.alert("Erro", "Não foi possível salvar o link!!")
         console.log(error)
