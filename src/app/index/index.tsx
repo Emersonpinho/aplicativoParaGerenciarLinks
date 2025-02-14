@@ -35,9 +35,10 @@ export default function Index(){
         }
     }
 
-    useFocusEffect(useCallback(() => {
+    useFocusEffect(
+        useCallback(() => {
         getLinks()
-    }, []))
+    }, [category]))
 
     return (
         <View style={style.container}>
