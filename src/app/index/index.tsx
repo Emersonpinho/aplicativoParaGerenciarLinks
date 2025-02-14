@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { 
     View, 
     Text, 
@@ -33,6 +33,10 @@ export default function Index(){
             Alert.alert("Erro", "Não foi possível listar os links")
         }
     }
+
+    useEffect(() => {
+        getLinks()
+    }, [])
 
     return (
         <View style={style.container}>
