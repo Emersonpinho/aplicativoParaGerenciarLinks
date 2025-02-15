@@ -49,6 +49,8 @@ export default function Index(){
     async function linkRemove() {
         try {
             await linkStorage.remove(link.id)
+            getLinks()
+            setShowModal(false)
         } catch (error) {
             Alert.alert("Erro", " Não foi possivel Excluir")
             console.log(error)
@@ -114,8 +116,14 @@ export default function Index(){
                     <Text style={style.modalUrl}>{link.url}</Text>
 
                     <View style={style.modalFooter}>
-                        <Option name="Excluir" icon="delete" variant="secondary" />
-                        <Option name="Abrir" icon="language" />
+                        <Option 
+                            name="Excluir" 
+                            icon="delete" 
+                            variant="secondary" 
+                            onPress={hadleRemove} />
+                        <Option 
+                            name="Abrir" 
+                            icon="language" />
                     </View>
 
                 </View>
