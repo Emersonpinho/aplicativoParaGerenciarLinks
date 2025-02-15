@@ -47,19 +47,20 @@ export default function Index(){
     }
 
     async function linkRemove() {
-        
-    }
-
-    function hadleRemove() {
         try {
-            Alert.alert("Excluir", "Deseja realmente excluir?", [
-                {style: "cancel", text: "Não"},
-                {text: "Sim", onPress: linkRemove}
-            ])
+            await linkStorage.remove(link.id)
         } catch (error) {
             Alert.alert("Erro", " Não foi possivel Excluir")
             console.log(error)
         }
+    }
+
+    function hadleRemove() {
+        Alert.alert("Excluir", "Deseja realmente excluir?", [
+            {style: "cancel", text: "Não"},
+            {text: "Sim", onPress: linkRemove}
+            ])
+        
     }
 
     useFocusEffect(
