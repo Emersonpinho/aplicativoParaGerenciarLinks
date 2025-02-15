@@ -46,6 +46,22 @@ export default function Index(){
         setLink(selected)
     }
 
+    async function linkRemove() {
+        
+    }
+
+    function hadleRemove() {
+        try {
+            Alert.alert("Excluir", "Deseja realmente excluir?", [
+                {style: "cancel", text: "Não"},
+                {text: "Sim", onPress: linkRemove}
+            ])
+        } catch (error) {
+            Alert.alert("Erro", " Não foi possivel Excluir")
+            console.log(error)
+        }
+    }
+
     useFocusEffect(
         useCallback(() => {
         getLinks()
@@ -100,7 +116,7 @@ export default function Index(){
                         <Option name="Excluir" icon="delete" variant="secondary" />
                         <Option name="Abrir" icon="language" />
                     </View>
-                    
+
                 </View>
             </View>
          </Modal>
