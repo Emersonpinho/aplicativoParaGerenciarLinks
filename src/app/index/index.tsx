@@ -5,6 +5,7 @@ import {
     Image, 
     Modal, 
     Alert,
+    Linking,
     FlatList, 
     TouchableOpacity,
 } from "react-native"
@@ -63,6 +64,15 @@ export default function Index(){
             {text: "Sim", onPress: linkRemove}
             ])
         
+    }
+
+    async function hadleOpen() {
+        try {
+            await Linking.openURL(link.url)
+        } catch (error) {
+            Alert.alert("Erro", " Não foi possivel abrir o link")
+            console.log(error)
+        }
     }
 
     useFocusEffect(
