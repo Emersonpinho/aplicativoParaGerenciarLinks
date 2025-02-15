@@ -65,7 +65,7 @@ export default function Index(){
                 <Link
                     name={item.name} 
                     url={item.url} 
-                    onDetails={() => console.log("clicou!")} 
+                    onDetails={() => setShowModal(true)} 
                 />
             )}
             style={style.links}
@@ -78,8 +78,12 @@ export default function Index(){
                 <View style={style.modalContent}>
                     <View style={style.modalHeader}>
                         <Text style={style.modalCategory}>Curso</Text>
-                        <TouchableOpacity>
-                            <MaterialIcons name="close" size={20} color={colors.gray[400]} />
+
+                        <TouchableOpacity onPress={() => setShowModal(false)}>
+                            <MaterialIcons 
+                            name="close" 
+                            size={20} 
+                            color={colors.gray[400]} />
                         </TouchableOpacity>
                     </View>
 
