@@ -40,7 +40,7 @@ export default function Index(){
         }
     }
 
-    function hadleDetails(){
+    function hadleDetails(selected: LinkStorage){
         setShowModal(true)
     }
 
@@ -69,7 +69,7 @@ export default function Index(){
                 <Link
                     name={item.name} 
                     url={item.url} 
-                    onDetails={hadleDetails} 
+                    onDetails={() => hadleDetails(item)} 
                 />
             )}
             style={style.links}
