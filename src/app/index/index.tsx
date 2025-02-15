@@ -83,7 +83,7 @@ export default function Index(){
             <View style={style.modal}>
                 <View style={style.modalContent}>
                     <View style={style.modalHeader}>
-                        <Text style={style.modalCategory}>Curso</Text>
+                        <Text style={style.modalCategory}>{link.category}</Text>
 
                         <TouchableOpacity onPress={() => setShowModal(false)}>
                             <MaterialIcons 
@@ -93,15 +93,14 @@ export default function Index(){
                         </TouchableOpacity>
                     </View>
 
-                    <Text style={style.modalLinkName}>Rocketseat
-                    </Text>
+                    <Text style={style.modalLinkName}>{link.name}</Text>
+                    <Text style={style.modalUrl}>{link.url}</Text>
 
-                    <Text style={style.modalUrl}>https://www.rocketseat.com.br/
-                    </Text>
                     <View style={style.modalFooter}>
                         <Option name="Excluir" icon="delete" variant="secondary" />
                         <Option name="Abrir" icon="language" />
                     </View>
+                    
                 </View>
             </View>
          </Modal>
