@@ -23,6 +23,7 @@ import { styles } from "@/components/categories/style"
 import { Try } from "expo-router/build/views/Try"
 
 export default function Index(){
+    const [showModal, setShowModal] = useState(false)
     const [links, setlinks] = useState<LinkStorage[]>([])
     const [category, setCategory] = useState(categories[0].name)
 
@@ -72,7 +73,7 @@ export default function Index(){
             showsVerticalScrollIndicator={false}
          />
 
-         <Modal transparent visible={false}>
+         <Modal transparent visible={showModal}>
             <View style={style.modal}>
                 <View style={style.modalContent}>
                     <View style={style.modalHeader}>
