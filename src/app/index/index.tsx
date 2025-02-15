@@ -40,6 +40,10 @@ export default function Index(){
         }
     }
 
+    function hadleDetails(){
+        setShowModal(true)
+    }
+
     useFocusEffect(
         useCallback(() => {
         getLinks()
@@ -65,7 +69,7 @@ export default function Index(){
                 <Link
                     name={item.name} 
                     url={item.url} 
-                    onDetails={() => setShowModal(true)} 
+                    onDetails={hadleDetails} 
                 />
             )}
             style={style.links}
