@@ -69,6 +69,7 @@ export default function Index(){
     async function hadleOpen() {
         try {
             await Linking.openURL(link.url)
+            setShowModal(false)
         } catch (error) {
             Alert.alert("Erro", " Não foi possivel abrir o link")
             console.log(error)
