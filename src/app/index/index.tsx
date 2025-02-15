@@ -24,6 +24,7 @@ import { Try } from "expo-router/build/views/Try"
 
 export default function Index(){
     const [showModal, setShowModal] = useState(false)
+    const [link, setLink] = useState<LinkStorage>({} as LinkStorage)
     const [links, setlinks] = useState<LinkStorage[]>([])
     const [category, setCategory] = useState(categories[0].name)
 
@@ -42,6 +43,7 @@ export default function Index(){
 
     function hadleDetails(selected: LinkStorage){
         setShowModal(true)
+        setLink(selected)
     }
 
     useFocusEffect(
