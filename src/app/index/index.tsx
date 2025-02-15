@@ -133,7 +133,8 @@ export default function Index(){
                             onPress={hadleRemove} />
                         <Option 
                             name="Abrir" 
-                            icon="language" />
+                            icon="language"
+                            onPress={hadleOpen} />
                     </View>
 
                 </View>
