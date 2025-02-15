@@ -73,7 +73,7 @@ export default function Index(){
             showsVerticalScrollIndicator={false}
          />
 
-         <Modal transparent visible={showModal}>
+         <Modal transparent visible={showModal} animationType="slide">
             <View style={style.modal}>
                 <View style={style.modalContent}>
                     <View style={style.modalHeader}>
