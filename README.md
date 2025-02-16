@@ -1,4 +1,4 @@
-## 🤖 Criação deste README
+## 🤖 Criação deste README <a id="criacao-deste-readme"></a>
 
 Este README foi criado com a ajuda de uma inteligência artificial (IA) para garantir clareza, organização e uma apresentação atrativa do projeto. 😊
 
@@ -13,14 +13,14 @@ Bem-vindo ao **Aplicativo Para Gerenciar Links**! 🎉 Este repositório contém
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
+- [Instalação](#instalacao)
 - [Como Usar](#como-usar)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+- [Contribuição](#contribuicao)
+- [Licença](#licenca)
 - [Contato](#contato)
-- [Criação deste README](#cria%C3%A7%C3%A3o-deste-readme)
+- [Criação deste README](#criacao-deste-readme)
 
-## 📖 Sobre o Projeto
+## 📖 Sobre o Projeto <a id="sobre-o-projeto"></a>
 
 O **Aplicativo Para Gerenciar Links** foi criado para facilitar a organização e o acesso aos seus links favoritos! 🌐💻
 
@@ -31,7 +31,7 @@ Com uma interface amigável e intuitiva, você pode:
 
 Nosso objetivo é fornecer uma solução prática que permita gerenciar seus links de forma rápida e eficiente, otimizando seu dia a dia! 🛠️🚀
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades <a id="funcionalidades"></a>
 
 - **Adicionar novos links** 🔗
 - **Editar links existentes** ✏️
@@ -41,7 +41,7 @@ Nosso objetivo é fornecer uma solução prática que permita gerenciar seus lin
 - **Pesquisa rápida de links** 🔍
 - **Suporte a múltiplas plataformas** 🌍
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas <a id="tecnologias-utilizadas"></a>
 
 - **TypeScript** (99.3%) – Para um código robusto e seguro 🔐
 - **JavaScript** (0.7%)
@@ -49,7 +49,7 @@ Nosso objetivo é fornecer uma solução prática que permita gerenciar seus lin
 - **Expo** – Facilitando o desenvolvimento e testes do aplicativo 🚀
 - **Jest** – Garantindo a qualidade do código com testes automatizados ✅
 
-## 💻 Instalação
+## 💻 Instalação <a id="instalacao"></a>
 
 Para rodar o projeto na sua máquina, siga os passos abaixo:
 
@@ -79,7 +79,7 @@ Para rodar o projeto na sua máquina, siga os passos abaixo:
    npx expo start
    ```
 
-## 🚀 Como Usar
+## 🚀 Como Usar <a id="como-usar"></a>
 
 Após a instalação, utilize os seguintes comandos com o Expo para rodar o aplicativo em diferentes ambientes:
 
@@ -115,7 +115,7 @@ Explore a interface:
 - **Editar/Excluir:** Utilize as opções ao lado de cada link para modificá-lo ou removê-lo.
 - **Pesquisa:** Use a barra de pesquisa para encontrar rapidamente o link desejado. 🔍
 
-## 🤝 Contribuição
+## 🤝 Contribuição <a id="contribuicao"></a>
 
 Contribuições são sempre bem-vindas! Se você deseja ajudar a melhorar este projeto, siga os passos abaixo:
 
@@ -136,16 +136,19 @@ Contribuições são sempre bem-vindas! Se você deseja ajudar a melhorar este p
 
 Sua contribuição é fundamental para tornar este projeto ainda melhor! 😄💡
 
-## 📜 Licença
+## 📜 Licença <a id="licenca"></a>
 
 Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 📧 Contato
+## 📧 Contato <a id="contato"></a>
 
 Em caso de dúvidas, sugestões ou feedback, entre em contato:
 
 - **Email:** [the.emerson.araujo@gmail.com](mailto:the.emerson.araujo@gmail.com)
 - **GitHub:** [Emersonpinho](https://github.com/Emersonpinho)
 
+---
+
+Divirta-se e bons códigos! 💻🔥
 
 ---
